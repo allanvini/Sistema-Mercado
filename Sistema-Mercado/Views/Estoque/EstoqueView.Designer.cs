@@ -1,0 +1,210 @@
+﻿
+namespace Sistema_Mercado.Views.Estoque
+{
+    partial class EstoqueView
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.btn_atualizar = new System.Windows.Forms.Button();
+            this.btn_cadastraProduto = new System.Windows.Forms.Button();
+            this.lbl_produtoSelecionado = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btn_verDetalhes = new System.Windows.Forms.Button();
+            this.dtgv_produtos = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Empresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco_Compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco_Venda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Data_Vencimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // btn_atualizar
+            // 
+            this.btn_atualizar.Location = new System.Drawing.Point(687, 390);
+            this.btn_atualizar.Name = "btn_atualizar";
+            this.btn_atualizar.Size = new System.Drawing.Size(261, 48);
+            this.btn_atualizar.TabIndex = 13;
+            this.btn_atualizar.Text = "Atualizar lista";
+            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
+            // 
+            // btn_cadastraProduto
+            // 
+            this.btn_cadastraProduto.Location = new System.Drawing.Point(420, 390);
+            this.btn_cadastraProduto.Name = "btn_cadastraProduto";
+            this.btn_cadastraProduto.Size = new System.Drawing.Size(261, 48);
+            this.btn_cadastraProduto.TabIndex = 12;
+            this.btn_cadastraProduto.Text = "Cadastrar novo produto";
+            this.btn_cadastraProduto.UseVisualStyleBackColor = true;
+            this.btn_cadastraProduto.Click += new System.EventHandler(this.btn_cadastraProduto_Click);
+            // 
+            // lbl_produtoSelecionado
+            // 
+            this.lbl_produtoSelecionado.AutoSize = true;
+            this.lbl_produtoSelecionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_produtoSelecionado.Location = new System.Drawing.Point(145, 314);
+            this.lbl_produtoSelecionado.Name = "lbl_produtoSelecionado";
+            this.lbl_produtoSelecionado.Size = new System.Drawing.Size(13, 13);
+            this.lbl_produtoSelecionado.TabIndex = 10;
+            this.lbl_produtoSelecionado.Text = "_";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 314);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Produto selecionado:";
+            // 
+            // btn_verDetalhes
+            // 
+            this.btn_verDetalhes.Location = new System.Drawing.Point(148, 390);
+            this.btn_verDetalhes.Name = "btn_verDetalhes";
+            this.btn_verDetalhes.Size = new System.Drawing.Size(266, 48);
+            this.btn_verDetalhes.TabIndex = 8;
+            this.btn_verDetalhes.Text = "Ver detalhes";
+            this.btn_verDetalhes.UseVisualStyleBackColor = true;
+            this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
+            // 
+            // dtgv_produtos
+            // 
+            this.dtgv_produtos.AllowUserToAddRows = false;
+            this.dtgv_produtos.AllowUserToDeleteRows = false;
+            this.dtgv_produtos.AllowUserToOrderColumns = true;
+            this.dtgv_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgv_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nome,
+            this.Empresa,
+            this.Categoria,
+            this.Preco_Compra,
+            this.Preco_Venda,
+            this.Estoque,
+            this.Data_Vencimento});
+            this.dtgv_produtos.Location = new System.Drawing.Point(13, 13);
+            this.dtgv_produtos.Name = "dtgv_produtos";
+            this.dtgv_produtos.ReadOnly = true;
+            this.dtgv_produtos.Size = new System.Drawing.Size(1069, 289);
+            this.dtgv_produtos.TabIndex = 7;
+            this.dtgv_produtos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_produtos_CellClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 25;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            this.Nome.ReadOnly = true;
+            this.Nome.Width = 200;
+            // 
+            // Empresa
+            // 
+            this.Empresa.HeaderText = "Empresa";
+            this.Empresa.Name = "Empresa";
+            this.Empresa.ReadOnly = true;
+            this.Empresa.Width = 175;
+            // 
+            // Categoria
+            // 
+            this.Categoria.HeaderText = "Categoria";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.Width = 150;
+            // 
+            // Preco_Compra
+            // 
+            this.Preco_Compra.HeaderText = "Preço de compra";
+            this.Preco_Compra.Name = "Preco_Compra";
+            this.Preco_Compra.ReadOnly = true;
+            this.Preco_Compra.Width = 175;
+            // 
+            // Preco_Venda
+            // 
+            this.Preco_Venda.HeaderText = "Preço de venda";
+            this.Preco_Venda.Name = "Preco_Venda";
+            this.Preco_Venda.ReadOnly = true;
+            // 
+            // Estoque
+            // 
+            this.Estoque.HeaderText = "Estoque";
+            this.Estoque.Name = "Estoque";
+            this.Estoque.ReadOnly = true;
+            // 
+            // Data_Vencimento
+            // 
+            this.Data_Vencimento.HeaderText = "Data de vencimento";
+            this.Data_Vencimento.Name = "Data_Vencimento";
+            this.Data_Vencimento.ReadOnly = true;
+            // 
+            // EstoqueView
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1095, 450);
+            this.Controls.Add(this.btn_atualizar);
+            this.Controls.Add(this.btn_cadastraProduto);
+            this.Controls.Add(this.lbl_produtoSelecionado);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_verDetalhes);
+            this.Controls.Add(this.dtgv_produtos);
+            this.Name = "EstoqueView";
+            this.Text = "EstoqueView";
+            ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btn_atualizar;
+        private System.Windows.Forms.Button btn_cadastraProduto;
+        private System.Windows.Forms.Label lbl_produtoSelecionado;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_verDetalhes;
+        private System.Windows.Forms.DataGridView dtgv_produtos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Empresa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preco_Compra;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preco_Venda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estoque;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Data_Vencimento;
+    }
+}
