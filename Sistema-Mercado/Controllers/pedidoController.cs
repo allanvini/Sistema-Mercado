@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using Sistema_Mercado.Models;
@@ -31,7 +27,6 @@ namespace Sistema_Mercado.Controllers
                 command.Parameters.AddWithValue("?clienteID", novoPedido.ClienteID);
                 command.Parameters.AddWithValue("?formaPagamento", novoPedido.Forma_pagamento);
 
-                //command.ExecuteNonQuery();
                 command.Dispose();
 
                 MySqlDataReader MySqlDR = command.ExecuteReader();
@@ -41,11 +36,12 @@ namespace Sistema_Mercado.Controllers
 
                 this.cadastraProdutosPedido(novoPedido);
                 this.cadastraServicosPedido(novoPedido);
-
             }
             finally
             {
                 con.Close();
+
+                MessageBox.Show("Pedido registrado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -55,15 +51,14 @@ namespace Sistema_Mercado.Controllers
             connection = new Connection.Connection();
             con.ConnectionString = connection.getConnectionString();
 
-            string query = "CALL cadastra_produto_pedido(?pedido_ID, ?produto_ID, ?produto_QTD);";
-
-            con.Open();
-            MySqlCommand command = new MySqlCommand(query, con);
-
             for (int index = 0; index < novoPedido.Produtos.Length; index++)
             {
                 if (novoPedido.Produtos[index] != null)
                 {
+                    string query = "CALL cadastra_produto_pedido(?pedido_ID, ?produto_ID, ?produto_QTD);";
+
+                    MySqlCommand command = new MySqlCommand(query, con);
+
                     command.Parameters.AddWithValue("?pedido_ID", novoPedido.PedidoID);
                     command.Parameters.AddWithValue("?produto_ID", novoPedido.Produtos[index].Id);
                     command.Parameters.AddWithValue("?produto_QTD", novoPedido.Produtos[index].Quantidade);
@@ -80,15 +75,14 @@ namespace Sistema_Mercado.Controllers
             connection = new Connection.Connection();
             con.ConnectionString = connection.getConnectionString();
 
-            string query = "CALL cadastra_servico_pedido(?pedido_ID, ?servico_ID);";
-
-            con.Open();
-            MySqlCommand command = new MySqlCommand(query, con);
-
             for(int index = 0; index < novoPedido.Servicos.Length; index++)
             {
                 if(novoPedido.Servicos[index] != null)
                 {
+                    string query = "CALL cadastra_servico_pedido(?pedido_ID, ?servico_ID);";
+
+                    MySqlCommand command = new MySqlCommand(query, con);
+
                     command.Parameters.AddWithValue("?pedido_ID", novoPedido.PedidoID);
                     command.Parameters.AddWithValue("?servico_ID", novoPedido.Servicos[index].Id);
 
@@ -119,6 +113,8 @@ namespace Sistema_Mercado.Controllers
             finally
             {
                 con.Close();
+
+                MessageBox.Show("Pedido removido com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
@@ -143,6 +139,8 @@ namespace Sistema_Mercado.Controllers
             finally
             {
                 con.Close();
+
+                MessageBox.Show("Pedido quitado.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

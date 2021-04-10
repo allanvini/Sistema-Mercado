@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using Sistema_Mercado.Models;
 
@@ -35,6 +30,7 @@ namespace Sistema_Mercado.Controllers
             finally
             {
                 con.Close();
+                MessageBox.Show("Serviço cadastrado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -56,6 +52,8 @@ namespace Sistema_Mercado.Controllers
                 command.Parameters.AddWithValue("?Preco", servico.Preco);
 
                 command.ExecuteNonQuery();
+
+                MessageBox.Show("Serviço atualizado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {

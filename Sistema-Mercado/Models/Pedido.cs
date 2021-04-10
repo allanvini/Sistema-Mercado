@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows.Forms;
 using Sistema_Mercado.Controllers;
 
 namespace Sistema_Mercado.Models
@@ -35,6 +31,7 @@ namespace Sistema_Mercado.Models
                     break;
                 }
             }
+            MessageBox.Show("Produto inserido com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void adicionaServico(Servico novoServico)
@@ -47,6 +44,8 @@ namespace Sistema_Mercado.Models
                     break;
                 }
             }
+
+            MessageBox.Show("Serviço inserido com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void finalizaPedido()

@@ -37,7 +37,7 @@ namespace Sistema_Mercado.Views.Clientes
             txb_estado.Text = "";
             txb_CEP.Text = "";
 
-            MessageBox.Show("Endereço adidionado com sucesso!", "Adicionado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
         }
 
         private void btn_cancela_Click(object sender, EventArgs e)

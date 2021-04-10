@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
@@ -46,8 +42,6 @@ namespace Sistema_Mercado.Controllers
                 {
                     MessageBox.Show("Login ou senha incorretos", "Erro de autenticação", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                
-
             }
             catch(Exception ex)
             {

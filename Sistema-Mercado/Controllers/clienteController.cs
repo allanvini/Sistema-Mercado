@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using Sistema_Mercado.Models;
@@ -50,6 +46,7 @@ namespace Sistema_Mercado.Controllers
             {
                 con.Close();
                 this.cadastraEnderecosCliente();
+
                 MessageBox.Show("Cliente adidionado com sucesso!", "Adicionado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }

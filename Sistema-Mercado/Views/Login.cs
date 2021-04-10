@@ -33,9 +33,6 @@ namespace Sistema_Mercado
 
                 dashboard.ShowDialog();
 
-            } else
-            {
-                MessageBox.Show("Login ou senha incorretos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }

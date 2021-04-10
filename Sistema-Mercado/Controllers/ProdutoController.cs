@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 using Sistema_Mercado.Models;
 
@@ -38,11 +33,11 @@ namespace Sistema_Mercado.Controllers
                 command.Parameters.AddWithValue("?dataVencimento", dataVencimento);
 
                 command.ExecuteNonQuery();
-
             }
             finally
             {
                 con.Close();
+                MessageBox.Show("Produto cadastrado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -71,6 +66,8 @@ namespace Sistema_Mercado.Controllers
                 command.Parameters.AddWithValue("?produtoDataVencimento", dataVencimento);
 
                 command.ExecuteNonQuery();
+
+                MessageBox.Show("Produto atualizado com sucesso.", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             finally
             {
