@@ -15,7 +15,7 @@ namespace Sistema_Mercado.Controllers
             connection = new Connection.Connection();
             con.ConnectionString = connection.getConnectionString();
 
-            string dataVencimento = novoProduto.DiaVencimento+"-"+novoProduto.MesVencimento+"-"+novoProduto.AnoVencimento;
+            string dataVencimento = $"{novoProduto.DiaVencimento}-{novoProduto.MesVencimento}-{novoProduto.AnoVencimento}";
 
             string query = "CALL cadastra_produto (?nome, ?empresa, ?categoria, ?preco_compra, ?preco_venda, ?estoque, ?dataVencimento)";
 
