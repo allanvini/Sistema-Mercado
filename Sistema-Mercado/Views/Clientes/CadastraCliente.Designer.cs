@@ -327,6 +327,7 @@ namespace Sistema_Mercado.Views.Clientes
             // btn_addEndereco
             // 
             this.btn_addEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addEndereco.ForeColor = System.Drawing.Color.Red;
             this.btn_addEndereco.Location = new System.Drawing.Point(254, 43);
             this.btn_addEndereco.Name = "btn_addEndereco";
             this.btn_addEndereco.Size = new System.Drawing.Size(90, 134);
