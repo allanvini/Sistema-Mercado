@@ -99,42 +99,50 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_detalhesPedido
             // 
+            this.btn_detalhesPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_detalhesPedido.ForeColor = System.Drawing.Color.White;
             this.btn_detalhesPedido.Location = new System.Drawing.Point(13, 498);
             this.btn_detalhesPedido.Name = "btn_detalhesPedido";
             this.btn_detalhesPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_detalhesPedido.TabIndex = 1;
             this.btn_detalhesPedido.Text = "Ver de talhes do pedido";
-            this.btn_detalhesPedido.UseVisualStyleBackColor = true;
+            this.btn_detalhesPedido.UseVisualStyleBackColor = false;
             this.btn_detalhesPedido.Click += new System.EventHandler(this.btn_detalhesPedido_Click);
             // 
             // btn_excluirPedido
             // 
+            this.btn_excluirPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_excluirPedido.ForeColor = System.Drawing.Color.White;
             this.btn_excluirPedido.Location = new System.Drawing.Point(251, 498);
             this.btn_excluirPedido.Name = "btn_excluirPedido";
             this.btn_excluirPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_excluirPedido.TabIndex = 2;
             this.btn_excluirPedido.Text = "Excluir pedido";
-            this.btn_excluirPedido.UseVisualStyleBackColor = true;
+            this.btn_excluirPedido.UseVisualStyleBackColor = false;
             this.btn_excluirPedido.Click += new System.EventHandler(this.btn_excluirPedido_Click);
             // 
             // btn_adicionarPedido
             // 
+            this.btn_adicionarPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_adicionarPedido.ForeColor = System.Drawing.Color.White;
             this.btn_adicionarPedido.Location = new System.Drawing.Point(488, 498);
             this.btn_adicionarPedido.Name = "btn_adicionarPedido";
             this.btn_adicionarPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_adicionarPedido.TabIndex = 3;
             this.btn_adicionarPedido.Text = "Cadastrar novo pedido";
-            this.btn_adicionarPedido.UseVisualStyleBackColor = true;
+            this.btn_adicionarPedido.UseVisualStyleBackColor = false;
             this.btn_adicionarPedido.Click += new System.EventHandler(this.btn_adicionarPedido_Click);
             // 
             // btn_atualizar
             // 
+            this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_atualizar.ForeColor = System.Drawing.Color.White;
             this.btn_atualizar.Location = new System.Drawing.Point(726, 498);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(232, 62);
             this.btn_atualizar.TabIndex = 4;
             this.btn_atualizar.Text = "Atualizar lista";
-            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
             // label1

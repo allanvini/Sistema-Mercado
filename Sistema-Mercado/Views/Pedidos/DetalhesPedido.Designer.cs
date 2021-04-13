@@ -141,22 +141,26 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_quitaPedido
             // 
+            this.btn_quitaPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_quitaPedido.ForeColor = System.Drawing.Color.White;
             this.btn_quitaPedido.Location = new System.Drawing.Point(20, 464);
             this.btn_quitaPedido.Name = "btn_quitaPedido";
             this.btn_quitaPedido.Size = new System.Drawing.Size(490, 51);
             this.btn_quitaPedido.TabIndex = 3;
             this.btn_quitaPedido.Text = "Marcar como quitado";
-            this.btn_quitaPedido.UseVisualStyleBackColor = true;
+            this.btn_quitaPedido.UseVisualStyleBackColor = false;
             this.btn_quitaPedido.Click += new System.EventHandler(this.btn_quitaPedido_Click);
             // 
             // btn_excluidPedido
             // 
+            this.btn_excluidPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_excluidPedido.ForeColor = System.Drawing.Color.White;
             this.btn_excluidPedido.Location = new System.Drawing.Point(516, 464);
             this.btn_excluidPedido.Name = "btn_excluidPedido";
             this.btn_excluidPedido.Size = new System.Drawing.Size(494, 51);
             this.btn_excluidPedido.TabIndex = 4;
             this.btn_excluidPedido.Text = "Excluir pedido";
-            this.btn_excluidPedido.UseVisualStyleBackColor = true;
+            this.btn_excluidPedido.UseVisualStyleBackColor = false;
             this.btn_excluidPedido.Click += new System.EventHandler(this.btn_excluidPedido_Click);
             // 
             // DetalhesPedido

@@ -58,9 +58,13 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_addEndereco = new System.Windows.Forms.Button();
             this.btn_finalizaCadastro = new System.Windows.Forms.Button();
             this.btn_cancela = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txb_nome
@@ -155,6 +159,7 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox1.Controls.Add(this.txb_dia);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
@@ -162,7 +167,8 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox1.Controls.Add(this.txb_mes);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 213);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(12, 147);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(263, 66);
             this.groupBox1.TabIndex = 10;
@@ -171,6 +177,7 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox2.Controls.Add(this.txb_email);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label1);
@@ -178,12 +185,14 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox2.Controls.Add(this.txb_CPF);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 71);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Location = new System.Drawing.Point(12, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(263, 136);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados gerais";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txb_email
             // 
@@ -206,15 +215,17 @@ namespace Sistema_Mercado.Views.Clientes
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(207, 28);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(158, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 25);
+            this.label6.Size = new System.Drawing.Size(329, 39);
             this.label6.TabIndex = 12;
             this.label6.Text = "Cadastro de cliente";
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.txb_CEP);
             this.groupBox3.Controls.Add(this.label12);
@@ -227,7 +238,8 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox3.Controls.Add(this.txb_rua);
             this.groupBox3.Controls.Add(this.btn_addEndereco);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(282, 71);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Location = new System.Drawing.Point(282, 5);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(350, 208);
             this.groupBox3.TabIndex = 13;
@@ -326,49 +338,75 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             // btn_addEndereco
             // 
+            this.btn_addEndereco.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_addEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addEndereco.ForeColor = System.Drawing.Color.Black;
+            this.btn_addEndereco.ForeColor = System.Drawing.Color.White;
             this.btn_addEndereco.Location = new System.Drawing.Point(254, 43);
             this.btn_addEndereco.Name = "btn_addEndereco";
             this.btn_addEndereco.Size = new System.Drawing.Size(90, 134);
             this.btn_addEndereco.TabIndex = 0;
             this.btn_addEndereco.Text = "Adicionar";
-            this.btn_addEndereco.UseVisualStyleBackColor = true;
+            this.btn_addEndereco.UseVisualStyleBackColor = false;
             this.btn_addEndereco.Click += new System.EventHandler(this.btn_addEndereco_Click);
             // 
             // btn_finalizaCadastro
             // 
-            this.btn_finalizaCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_finalizaCadastro.Location = new System.Drawing.Point(12, 285);
+            this.btn_finalizaCadastro.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_finalizaCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_finalizaCadastro.ForeColor = System.Drawing.Color.White;
+            this.btn_finalizaCadastro.Location = new System.Drawing.Point(12, 219);
             this.btn_finalizaCadastro.Name = "btn_finalizaCadastro";
             this.btn_finalizaCadastro.Size = new System.Drawing.Size(304, 63);
             this.btn_finalizaCadastro.TabIndex = 14;
             this.btn_finalizaCadastro.Text = "Cadastrar";
-            this.btn_finalizaCadastro.UseVisualStyleBackColor = true;
+            this.btn_finalizaCadastro.UseVisualStyleBackColor = false;
             this.btn_finalizaCadastro.Click += new System.EventHandler(this.btn_finalizaCadastro_Click);
             // 
             // btn_cancela
             // 
-            this.btn_cancela.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancela.Location = new System.Drawing.Point(328, 285);
+            this.btn_cancela.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_cancela.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancela.ForeColor = System.Drawing.Color.White;
+            this.btn_cancela.Location = new System.Drawing.Point(328, 219);
             this.btn_cancela.Name = "btn_cancela";
             this.btn_cancela.Size = new System.Drawing.Size(304, 63);
             this.btn_cancela.TabIndex = 15;
             this.btn_cancela.Text = "Cancelar";
-            this.btn_cancela.UseVisualStyleBackColor = true;
+            this.btn_cancela.UseVisualStyleBackColor = false;
             this.btn_cancela.Click += new System.EventHandler(this.btn_cancela_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Location = new System.Drawing.Point(-1, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(657, 68);
+            this.panel1.TabIndex = 16;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btn_cancela);
+            this.panel2.Controls.Add(this.btn_finalizaCadastro);
+            this.panel2.Controls.Add(this.groupBox3);
+            this.panel2.Controls.Add(this.groupBox2);
+            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Location = new System.Drawing.Point(0, 66);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(657, 305);
+            this.panel2.TabIndex = 17;
             // 
             // CadastraCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 368);
-            this.Controls.Add(this.btn_cancela);
-            this.Controls.Add(this.btn_finalizaCadastro);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "CadastraCliente";
             this.Text = "CadastraCliente";
             this.groupBox1.ResumeLayout(false);
@@ -377,8 +415,10 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -413,5 +453,7 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.Button btn_addEndereco;
         private System.Windows.Forms.Button btn_finalizaCadastro;
         private System.Windows.Forms.Button btn_cancela;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

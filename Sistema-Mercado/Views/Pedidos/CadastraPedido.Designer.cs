@@ -83,6 +83,7 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox1.Controls.Add(this.txb_quantidadeProduto);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -90,6 +91,7 @@ namespace Sistema_Mercado.Views.Pedidos
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btn_adicionaProduto);
             this.groupBox1.Controls.Add(this.dtgv_produtos);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(12, 243);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1266, 193);
@@ -146,12 +148,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_adicionaProduto
             // 
+            this.btn_adicionaProduto.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_adicionaProduto.ForeColor = System.Drawing.Color.White;
             this.btn_adicionaProduto.Location = new System.Drawing.Point(1081, 127);
             this.btn_adicionaProduto.Name = "btn_adicionaProduto";
             this.btn_adicionaProduto.Size = new System.Drawing.Size(179, 50);
             this.btn_adicionaProduto.TabIndex = 6;
             this.btn_adicionaProduto.Text = "Adicionar Produto";
-            this.btn_adicionaProduto.UseVisualStyleBackColor = true;
+            this.btn_adicionaProduto.UseVisualStyleBackColor = false;
             this.btn_adicionaProduto.Click += new System.EventHandler(this.btn_adicionaProduto_Click);
             // 
             // dtgv_produtos
@@ -231,11 +235,13 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.lbl_servicoID);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.btn_adicionaServico);
             this.groupBox2.Controls.Add(this.dtgv_servicos);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(12, 442);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(696, 196);
@@ -275,12 +281,13 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_adicionaServico
             // 
+            this.btn_adicionaServico.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_adicionaServico.Location = new System.Drawing.Point(455, 129);
             this.btn_adicionaServico.Name = "btn_adicionaServico";
             this.btn_adicionaServico.Size = new System.Drawing.Size(235, 50);
             this.btn_adicionaServico.TabIndex = 16;
             this.btn_adicionaServico.Text = "Adicionar Serviço";
-            this.btn_adicionaServico.UseVisualStyleBackColor = true;
+            this.btn_adicionaServico.UseVisualStyleBackColor = false;
             this.btn_adicionaServico.Click += new System.EventHandler(this.btn_adicionaServico_Click);
             // 
             // dtgv_servicos
@@ -333,11 +340,13 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.lbl_clienteID);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.btn_selecionaCliente);
             this.groupBox3.Controls.Add(this.dtgv_clientes);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(12, 53);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(1015, 184);
@@ -377,12 +386,13 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_selecionaCliente
             // 
+            this.btn_selecionaCliente.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_selecionaCliente.Location = new System.Drawing.Point(787, 119);
             this.btn_selecionaCliente.Name = "btn_selecionaCliente";
             this.btn_selecionaCliente.Size = new System.Drawing.Size(222, 50);
             this.btn_selecionaCliente.TabIndex = 5;
             this.btn_selecionaCliente.Text = "Seleciona Cliente";
-            this.btn_selecionaCliente.UseVisualStyleBackColor = true;
+            this.btn_selecionaCliente.UseVisualStyleBackColor = false;
             this.btn_selecionaCliente.Click += new System.EventHandler(this.btn_selecionaCliente_Click);
             // 
             // dtgv_clientes
@@ -441,29 +451,35 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             // btn_fechaPedido
             // 
+            this.btn_fechaPedido.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_fechaPedido.ForeColor = System.Drawing.Color.White;
             this.btn_fechaPedido.Location = new System.Drawing.Point(1017, 489);
             this.btn_fechaPedido.Name = "btn_fechaPedido";
             this.btn_fechaPedido.Size = new System.Drawing.Size(215, 50);
             this.btn_fechaPedido.TabIndex = 4;
             this.btn_fechaPedido.Text = "Finaliza Pedido";
-            this.btn_fechaPedido.UseVisualStyleBackColor = true;
+            this.btn_fechaPedido.UseVisualStyleBackColor = false;
             this.btn_fechaPedido.Click += new System.EventHandler(this.btn_fechaPedido_Click);
             // 
             // btn_cancela
             // 
+            this.btn_cancela.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_cancela.ForeColor = System.Drawing.Color.White;
             this.btn_cancela.Location = new System.Drawing.Point(1017, 545);
             this.btn_cancela.Name = "btn_cancela";
             this.btn_cancela.Size = new System.Drawing.Size(215, 50);
             this.btn_cancela.TabIndex = 5;
             this.btn_cancela.Text = "Cancela";
-            this.btn_cancela.UseVisualStyleBackColor = true;
+            this.btn_cancela.UseVisualStyleBackColor = false;
             this.btn_cancela.Click += new System.EventHandler(this.btn_cancela_Click);
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBox4.Controls.Add(this.rdb_credito);
             this.groupBox4.Controls.Add(this.rdb_dinheiro);
             this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.ForeColor = System.Drawing.Color.White;
             this.groupBox4.Location = new System.Drawing.Point(715, 443);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(235, 195);

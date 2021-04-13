@@ -38,27 +38,35 @@ namespace Sistema_Mercado.Views.Servicos
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descricao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_servicos)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_atualizar
             // 
-            this.btn_atualizar.Location = new System.Drawing.Point(319, 354);
+            this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_atualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_atualizar.Location = new System.Drawing.Point(321, 18);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(136, 48);
             this.btn_atualizar.TabIndex = 19;
             this.btn_atualizar.Text = "Atualizar lista";
-            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
             // btn_cadastraServico
             // 
-            this.btn_cadastraServico.Location = new System.Drawing.Point(169, 354);
+            this.btn_cadastraServico.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_cadastraServico.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastraServico.Location = new System.Drawing.Point(171, 18);
             this.btn_cadastraServico.Name = "btn_cadastraServico";
             this.btn_cadastraServico.Size = new System.Drawing.Size(144, 48);
             this.btn_cadastraServico.TabIndex = 18;
             this.btn_cadastraServico.Text = "Cadastrar novo serviço";
-            this.btn_cadastraServico.UseVisualStyleBackColor = true;
+            this.btn_cadastraServico.UseVisualStyleBackColor = false;
             this.btn_cadastraServico.Click += new System.EventHandler(this.btn_cadastraServico_Click);
             // 
             // lbl_servicoSelecionado
@@ -83,12 +91,14 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             // btn_verDetalhes
             // 
-            this.btn_verDetalhes.Location = new System.Drawing.Point(12, 354);
+            this.btn_verDetalhes.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_verDetalhes.ForeColor = System.Drawing.Color.White;
+            this.btn_verDetalhes.Location = new System.Drawing.Point(14, 18);
             this.btn_verDetalhes.Name = "btn_verDetalhes";
             this.btn_verDetalhes.Size = new System.Drawing.Size(151, 48);
             this.btn_verDetalhes.TabIndex = 15;
             this.btn_verDetalhes.Text = "Ver detalhes";
-            this.btn_verDetalhes.UseVisualStyleBackColor = true;
+            this.btn_verDetalhes.UseVisualStyleBackColor = false;
             this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
             // 
             // dtgv_servicos
@@ -101,7 +111,7 @@ namespace Sistema_Mercado.Views.Servicos
             this.ID,
             this.Descricao,
             this.Preco});
-            this.dtgv_servicos.Location = new System.Drawing.Point(12, 12);
+            this.dtgv_servicos.Location = new System.Drawing.Point(12, 21);
             this.dtgv_servicos.Name = "dtgv_servicos";
             this.dtgv_servicos.ReadOnly = true;
             this.dtgv_servicos.Size = new System.Drawing.Size(443, 289);
@@ -129,22 +139,44 @@ namespace Sistema_Mercado.Views.Servicos
             this.Preco.ReadOnly = true;
             this.Preco.Width = 175;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.lbl_servicoSelecionado);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dtgv_servicos);
+            this.panel1.Location = new System.Drawing.Point(-3, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(480, 348);
+            this.panel1.TabIndex = 20;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btn_atualizar);
+            this.panel2.Controls.Add(this.btn_cadastraServico);
+            this.panel2.Controls.Add(this.btn_verDetalhes);
+            this.panel2.Location = new System.Drawing.Point(-3, 347);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(481, 85);
+            this.panel2.TabIndex = 21;
+            // 
             // ServicosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(469, 425);
-            this.Controls.Add(this.btn_atualizar);
-            this.Controls.Add(this.btn_cadastraServico);
-            this.Controls.Add(this.lbl_servicoSelecionado);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_verDetalhes);
-            this.Controls.Add(this.dtgv_servicos);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Name = "ServicosView";
             this.Text = "ServicosView";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_servicos)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -159,5 +191,7 @@ namespace Sistema_Mercado.Views.Servicos
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

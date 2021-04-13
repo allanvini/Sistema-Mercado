@@ -30,18 +30,20 @@ namespace Sistema_Mercado.Views.Clientes
         private void InitializeComponent()
         {
             this.dtgv_clientes = new System.Windows.Forms.DataGridView();
-            this.btn_verDetalhes = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_clienteSelecionado = new System.Windows.Forms.Label();
-            this.btn_excluirCliente = new System.Windows.Forms.Button();
-            this.btn_cadastraCliente = new System.Windows.Forms.Button();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_de_Nascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_verDetalhes = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_clienteSelecionado = new System.Windows.Forms.Label();
+            this.btn_excluirCliente = new System.Windows.Forms.Button();
+            this.btn_cadastraCliente = new System.Windows.Forms.Button();
             this.btn_atualizar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_clientes)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgv_clientes
@@ -62,56 +64,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.dtgv_clientes.Size = new System.Drawing.Size(775, 289);
             this.dtgv_clientes.TabIndex = 0;
             this.dtgv_clientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_clientes_CellClick);
-            // 
-            // btn_verDetalhes
-            // 
-            this.btn_verDetalhes.Location = new System.Drawing.Point(13, 390);
-            this.btn_verDetalhes.Name = "btn_verDetalhes";
-            this.btn_verDetalhes.Size = new System.Drawing.Size(191, 48);
-            this.btn_verDetalhes.TabIndex = 1;
-            this.btn_verDetalhes.Text = "Ver detalhes";
-            this.btn_verDetalhes.UseVisualStyleBackColor = true;
-            this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 314);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Cliente Seiecionado:";
-            // 
-            // lbl_clienteSelecionado
-            // 
-            this.lbl_clienteSelecionado.AutoSize = true;
-            this.lbl_clienteSelecionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_clienteSelecionado.Location = new System.Drawing.Point(142, 314);
-            this.lbl_clienteSelecionado.Name = "lbl_clienteSelecionado";
-            this.lbl_clienteSelecionado.Size = new System.Drawing.Size(13, 13);
-            this.lbl_clienteSelecionado.TabIndex = 3;
-            this.lbl_clienteSelecionado.Text = "_";
-            // 
-            // btn_excluirCliente
-            // 
-            this.btn_excluirCliente.Location = new System.Drawing.Point(213, 390);
-            this.btn_excluirCliente.Name = "btn_excluirCliente";
-            this.btn_excluirCliente.Size = new System.Drawing.Size(191, 48);
-            this.btn_excluirCliente.TabIndex = 4;
-            this.btn_excluirCliente.Text = "Excluir cliente";
-            this.btn_excluirCliente.UseVisualStyleBackColor = true;
-            this.btn_excluirCliente.Click += new System.EventHandler(this.btn_excluirCliente_Click);
-            // 
-            // btn_cadastraCliente
-            // 
-            this.btn_cadastraCliente.Location = new System.Drawing.Point(410, 390);
-            this.btn_cadastraCliente.Name = "btn_cadastraCliente";
-            this.btn_cadastraCliente.Size = new System.Drawing.Size(186, 48);
-            this.btn_cadastraCliente.TabIndex = 5;
-            this.btn_cadastraCliente.Text = "Cadastrar novo cliente";
-            this.btn_cadastraCliente.UseVisualStyleBackColor = true;
-            this.btn_cadastraCliente.Click += new System.EventHandler(this.btn_cadastraCliente_Click);
             // 
             // ID
             // 
@@ -148,31 +100,100 @@ namespace Sistema_Mercado.Views.Clientes
             this.Email.ReadOnly = true;
             this.Email.Width = 175;
             // 
+            // btn_verDetalhes
+            // 
+            this.btn_verDetalhes.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_verDetalhes.ForeColor = System.Drawing.Color.White;
+            this.btn_verDetalhes.Location = new System.Drawing.Point(13, 19);
+            this.btn_verDetalhes.Name = "btn_verDetalhes";
+            this.btn_verDetalhes.Size = new System.Drawing.Size(191, 48);
+            this.btn_verDetalhes.TabIndex = 1;
+            this.btn_verDetalhes.Text = "Ver detalhes";
+            this.btn_verDetalhes.UseVisualStyleBackColor = false;
+            this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 314);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Cliente Seiecionado:";
+            // 
+            // lbl_clienteSelecionado
+            // 
+            this.lbl_clienteSelecionado.AutoSize = true;
+            this.lbl_clienteSelecionado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_clienteSelecionado.Location = new System.Drawing.Point(142, 314);
+            this.lbl_clienteSelecionado.Name = "lbl_clienteSelecionado";
+            this.lbl_clienteSelecionado.Size = new System.Drawing.Size(13, 13);
+            this.lbl_clienteSelecionado.TabIndex = 3;
+            this.lbl_clienteSelecionado.Text = "_";
+            // 
+            // btn_excluirCliente
+            // 
+            this.btn_excluirCliente.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_excluirCliente.ForeColor = System.Drawing.Color.White;
+            this.btn_excluirCliente.Location = new System.Drawing.Point(213, 19);
+            this.btn_excluirCliente.Name = "btn_excluirCliente";
+            this.btn_excluirCliente.Size = new System.Drawing.Size(191, 48);
+            this.btn_excluirCliente.TabIndex = 4;
+            this.btn_excluirCliente.Text = "Excluir cliente";
+            this.btn_excluirCliente.UseVisualStyleBackColor = false;
+            this.btn_excluirCliente.Click += new System.EventHandler(this.btn_excluirCliente_Click);
+            // 
+            // btn_cadastraCliente
+            // 
+            this.btn_cadastraCliente.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_cadastraCliente.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastraCliente.Location = new System.Drawing.Point(410, 19);
+            this.btn_cadastraCliente.Name = "btn_cadastraCliente";
+            this.btn_cadastraCliente.Size = new System.Drawing.Size(186, 48);
+            this.btn_cadastraCliente.TabIndex = 5;
+            this.btn_cadastraCliente.Text = "Cadastrar novo cliente";
+            this.btn_cadastraCliente.UseVisualStyleBackColor = false;
+            this.btn_cadastraCliente.Click += new System.EventHandler(this.btn_cadastraCliente_Click);
+            // 
             // btn_atualizar
             // 
-            this.btn_atualizar.Location = new System.Drawing.Point(602, 390);
+            this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_atualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_atualizar.Location = new System.Drawing.Point(602, 19);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(186, 48);
             this.btn_atualizar.TabIndex = 6;
             this.btn_atualizar.Text = "Atualizar lista";
-            this.btn_atualizar.UseVisualStyleBackColor = true;
+            this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btn_atualizar);
+            this.panel1.Controls.Add(this.btn_cadastraCliente);
+            this.panel1.Controls.Add(this.btn_excluirCliente);
+            this.panel1.Controls.Add(this.btn_verDetalhes);
+            this.panel1.Location = new System.Drawing.Point(0, 338);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(810, 117);
+            this.panel1.TabIndex = 7;
             // 
             // ClientesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_atualizar);
-            this.Controls.Add(this.btn_cadastraCliente);
-            this.Controls.Add(this.btn_excluirCliente);
+            this.ClientSize = new System.Drawing.Size(800, 430);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lbl_clienteSelecionado);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_verDetalhes);
             this.Controls.Add(this.dtgv_clientes);
             this.Name = "ClientesView";
             this.Text = "ClientesView";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_clientes)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,5 +213,6 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_de_Nascimento;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.Button btn_atualizar;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -58,5 +58,15 @@ namespace Sistema_Mercado.Views.Clientes
 
             this.Close();
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
