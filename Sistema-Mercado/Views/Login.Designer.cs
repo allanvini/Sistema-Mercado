@@ -86,7 +86,6 @@ namespace Sistema_Mercado
             this.label3.Size = new System.Drawing.Size(128, 39);
             this.label3.TabIndex = 4;
             this.label3.Text = "LOGIN";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btn_logar
             // 
@@ -121,7 +120,7 @@ namespace Sistema_Mercado
             this.panel2.Controls.Add(this.txb_login);
             this.panel2.Location = new System.Drawing.Point(0, 62);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 104);
+            this.panel2.Size = new System.Drawing.Size(423, 104);
             this.panel2.TabIndex = 7;
             // 
             // Login

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Sistema_Mercado.Models;
 
@@ -22,8 +15,6 @@ namespace Sistema_Mercado.Views.Clientes
         {
             InitializeComponent();
         }
-
-        
 
         private void btn_addEndereco_Click(object sender, EventArgs e)
         {
@@ -57,16 +48,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.novoCliente.finalizaCadastro();
 
             this.Close();
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -25,7 +19,6 @@ namespace Sistema_Mercado.Views.Estoque
 
         private void carregarDados()
         {
-            // Colunas 8 =>>           ID, Nome, Empresa, Categoria, Preco_Compra, Preco_Venda, Estoque, Data_Vencimento
             connection = new Connection.Connection();
             dtgv_produtos.DataSource = null;
             dtgv_produtos.Rows.Clear();

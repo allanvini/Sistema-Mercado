@@ -192,7 +192,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados gerais";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txb_email
             // 
@@ -384,7 +383,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(657, 68);
             this.panel1.TabIndex = 16;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 

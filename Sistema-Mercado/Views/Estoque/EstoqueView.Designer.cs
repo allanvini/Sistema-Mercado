@@ -42,6 +42,8 @@ namespace Sistema_Mercado.Views.Estoque
             this.Estoque = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Data_Vencimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lbl_produtoSelecionado = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +52,7 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_atualizar.ForeColor = System.Drawing.Color.White;
-            this.btn_atualizar.Location = new System.Drawing.Point(718, 22);
+            this.btn_atualizar.Location = new System.Drawing.Point(719, 25);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(261, 48);
             this.btn_atualizar.TabIndex = 13;
@@ -62,7 +64,7 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_cadastraProduto.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_cadastraProduto.ForeColor = System.Drawing.Color.White;
-            this.btn_cadastraProduto.Location = new System.Drawing.Point(451, 22);
+            this.btn_cadastraProduto.Location = new System.Drawing.Point(452, 25);
             this.btn_cadastraProduto.Name = "btn_cadastraProduto";
             this.btn_cadastraProduto.Size = new System.Drawing.Size(261, 48);
             this.btn_cadastraProduto.TabIndex = 12;
@@ -74,7 +76,7 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_verDetalhes.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_verDetalhes.ForeColor = System.Drawing.Color.White;
-            this.btn_verDetalhes.Location = new System.Drawing.Point(179, 22);
+            this.btn_verDetalhes.Location = new System.Drawing.Point(180, 25);
             this.btn_verDetalhes.Name = "btn_verDetalhes";
             this.btn_verDetalhes.Size = new System.Drawing.Size(266, 48);
             this.btn_verDetalhes.TabIndex = 8;
@@ -164,23 +166,44 @@ namespace Sistema_Mercado.Views.Estoque
             this.panel1.Controls.Add(this.btn_atualizar);
             this.panel1.Controls.Add(this.btn_cadastraProduto);
             this.panel1.Controls.Add(this.btn_verDetalhes);
-            this.panel1.Location = new System.Drawing.Point(-5, 307);
+            this.panel1.Location = new System.Drawing.Point(-5, 361);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1105, 100);
+            this.panel1.Size = new System.Drawing.Size(1105, 104);
             this.panel1.TabIndex = 14;
+            // 
+            // lbl_produtoSelecionado
+            // 
+            this.lbl_produtoSelecionado.AutoSize = true;
+            this.lbl_produtoSelecionado.Location = new System.Drawing.Point(126, 321);
+            this.lbl_produtoSelecionado.Name = "lbl_produtoSelecionado";
+            this.lbl_produtoSelecionado.Size = new System.Drawing.Size(13, 13);
+            this.lbl_produtoSelecionado.TabIndex = 15;
+            this.lbl_produtoSelecionado.Text = "_";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 321);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Produto selecionado:";
             // 
             // EstoqueView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 402);
+            this.ClientSize = new System.Drawing.Size(1095, 459);
+            this.Controls.Add(this.lbl_produtoSelecionado);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dtgv_produtos);
             this.Name = "EstoqueView";
             this.Text = "EstoqueView";
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -199,5 +222,7 @@ namespace Sistema_Mercado.Views.Estoque
         private System.Windows.Forms.DataGridViewTextBoxColumn Estoque;
         private System.Windows.Forms.DataGridViewTextBoxColumn Data_Vencimento;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbl_produtoSelecionado;
+        private System.Windows.Forms.Label label1;
     }
 }

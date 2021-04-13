@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -23,7 +17,6 @@ namespace Sistema_Mercado.Views.Servicos
 
         private void carregarDados()
         {
-            // Colunas 3 =>>             ID, Descrição, Preço
             connection = new Connection.Connection();
             dtgv_servicos.DataSource = null;
             dtgv_servicos.Rows.Clear();
