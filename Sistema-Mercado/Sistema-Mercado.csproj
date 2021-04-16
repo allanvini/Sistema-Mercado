@@ -172,6 +172,12 @@
     <Compile Include="Views\Pedidos\PedidosView.Designer.cs">
       <DependentUpon>PedidosView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Relatorio\RelatorioVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Relatorio\RelatorioVendas.Designer.cs">
+      <DependentUpon>RelatorioVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Servicos\CadastraServico.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Pedidos\PedidosView.resx">
       <DependentUpon>PedidosView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Relatorio\RelatorioVendas.resx">
+      <DependentUpon>RelatorioVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Servicos\CadastraServico.resx">
       <DependentUpon>CadastraServico.cs</DependentUpon>

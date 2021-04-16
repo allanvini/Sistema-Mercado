@@ -21,13 +21,9 @@ namespace Sistema_Mercado
             if(funcionario != null)
             {
                 Views.Dashboard dashboard = new Views.Dashboard(funcionario);
-
                 this.Hide();
-
                 dashboard.ShowDialog();
-
             }
-
         }
     }
 }

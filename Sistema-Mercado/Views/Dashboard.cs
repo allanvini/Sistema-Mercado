@@ -16,6 +16,10 @@ namespace Sistema_Mercado.Views
             InitializeComponent();
             this.funcionarioLogado = funcionario;
             preencheCabecalhos();
+            if(funcionario.Cargo == "Gerente")
+            {
+                btn_relatório.Enabled = true;
+            }
         }
 
         private void preencheCabecalhos()
@@ -51,6 +55,12 @@ namespace Sistema_Mercado.Views
         {
             ClientesView clienteView = new ClientesView();
             clienteView.ShowDialog();
+        }
+
+        private void btn_relatório_Click(object sender, EventArgs e)
+        {
+            Relatorio.RelatorioVendas relatorios = new Relatorio.RelatorioVendas();
+            relatorios.ShowDialog();
         }
     }
 }

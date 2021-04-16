@@ -39,6 +39,7 @@ namespace Sistema_Mercado.Views
             this.btn_sair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_relatório = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +49,7 @@ namespace Sistema_Mercado.Views
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(216, 0);
+            this.label1.Location = new System.Drawing.Point(309, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 39);
             this.label1.TabIndex = 0;
@@ -59,7 +60,7 @@ namespace Sistema_Mercado.Views
             this.lbl_username.AutoSize = true;
             this.lbl_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_username.ForeColor = System.Drawing.Color.White;
-            this.lbl_username.Location = new System.Drawing.Point(12, 54);
+            this.lbl_username.Location = new System.Drawing.Point(10, 45);
             this.lbl_username.Name = "lbl_username";
             this.lbl_username.Size = new System.Drawing.Size(53, 24);
             this.lbl_username.TabIndex = 1;
@@ -69,7 +70,7 @@ namespace Sistema_Mercado.Views
             // 
             this.lbl_userPosition.AutoSize = true;
             this.lbl_userPosition.ForeColor = System.Drawing.Color.White;
-            this.lbl_userPosition.Location = new System.Drawing.Point(13, 78);
+            this.lbl_userPosition.Location = new System.Drawing.Point(11, 69);
             this.lbl_userPosition.Name = "lbl_userPosition";
             this.lbl_userPosition.Size = new System.Drawing.Size(44, 13);
             this.lbl_userPosition.TabIndex = 2;
@@ -134,7 +135,7 @@ namespace Sistema_Mercado.Views
             this.btn_sair.ForeColor = System.Drawing.Color.White;
             this.btn_sair.Location = new System.Drawing.Point(5, 148);
             this.btn_sair.Name = "btn_sair";
-            this.btn_sair.Size = new System.Drawing.Size(616, 64);
+            this.btn_sair.Size = new System.Drawing.Size(783, 64);
             this.btn_sair.TabIndex = 7;
             this.btn_sair.Text = "Sair";
             this.btn_sair.UseVisualStyleBackColor = false;
@@ -149,13 +150,14 @@ namespace Sistema_Mercado.Views
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(633, 102);
+            this.panel1.Size = new System.Drawing.Size(804, 102);
             this.panel1.TabIndex = 8;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btn_relatório);
             this.panel2.Controls.Add(this.btn_sair);
             this.panel2.Controls.Add(this.btn_verClientes);
             this.panel2.Controls.Add(this.btn_verServicos);
@@ -163,14 +165,28 @@ namespace Sistema_Mercado.Views
             this.panel2.Controls.Add(this.btn_verPedidos);
             this.panel2.Location = new System.Drawing.Point(0, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(633, 231);
+            this.panel2.Size = new System.Drawing.Size(804, 231);
             this.panel2.TabIndex = 9;
+            // 
+            // btn_relatório
+            // 
+            this.btn_relatório.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_relatório.Enabled = false;
+            this.btn_relatório.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_relatório.ForeColor = System.Drawing.Color.White;
+            this.btn_relatório.Location = new System.Drawing.Point(627, 8);
+            this.btn_relatório.Name = "btn_relatório";
+            this.btn_relatório.Size = new System.Drawing.Size(161, 134);
+            this.btn_relatório.TabIndex = 8;
+            this.btn_relatório.Text = "Ver relatório de vendas";
+            this.btn_relatório.UseVisualStyleBackColor = false;
+            this.btn_relatório.Click += new System.EventHandler(this.btn_relatório_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 326);
+            this.ClientSize = new System.Drawing.Size(798, 326);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
@@ -194,5 +210,6 @@ namespace Sistema_Mercado.Views
         private System.Windows.Forms.Button btn_sair;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_relatório;
     }
 }
