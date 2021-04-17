@@ -77,7 +77,7 @@ namespace Sistema_Mercado.Views.Relatorio
             // 
             // btn_voltar
             // 
-            this.btn_voltar.Location = new System.Drawing.Point(158, 131);
+            this.btn_voltar.Location = new System.Drawing.Point(162, 131);
             this.btn_voltar.Name = "btn_voltar";
             this.btn_voltar.Size = new System.Drawing.Size(144, 41);
             this.btn_voltar.TabIndex = 4;
