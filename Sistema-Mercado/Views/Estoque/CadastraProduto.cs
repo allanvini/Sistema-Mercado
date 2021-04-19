@@ -7,6 +7,7 @@ namespace Sistema_Mercado.Views.Estoque
     public partial class CadastraProduto : Form
     {
         private Produto produto = new Produto();
+
         public CadastraProduto()
         {
             InitializeComponent();

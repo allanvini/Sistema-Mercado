@@ -51,7 +51,6 @@ namespace Sistema_Mercado.Models
             }
             MessageBox.Show("Endereço adidionado com sucesso!", "Adicionado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-        
 
         public void finalizaCadastro()
         {

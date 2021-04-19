@@ -7,7 +7,6 @@ namespace Sistema_Mercado.Views.Clientes
 {
     public partial class CadastraCliente : Form
     {
-        
 
         private Cliente novoCliente = new Cliente();
 

@@ -158,11 +158,14 @@ namespace Sistema_Mercado.Views.Pedidos
         private void btn_selecionaCliente_Click(object sender, EventArgs e)
         {
             this.novoPedido.ClienteID = Convert.ToInt32(lbl_clienteID.Text);
+
+            MessageBox.Show("Cliente selecionado.", "Ok.", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btn_adicionaProduto_Click(object sender, EventArgs e)
         {
             Produto novoProduto = new Produto();
+
             novoProduto.Id = Convert.ToInt32(lbl_produtoID.Text);
             novoProduto.Quantidade = Convert.ToInt32(txb_quantidadeProduto.Text);
 

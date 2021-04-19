@@ -8,8 +8,10 @@ namespace Sistema_Mercado.Models
         private int pedidoID;
         private int clienteID;
         private int vendedorID;
+
         private Produto[] produtos = new Produto[50];
         private Servico[] servicos = new Servico[50];
+
         private string forma_pagamento;
 
         private pedidoController controller = new pedidoController();

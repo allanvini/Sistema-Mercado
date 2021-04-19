@@ -16,6 +16,7 @@ namespace Sistema_Mercado.Views
             InitializeComponent();
             this.funcionarioLogado = funcionario;
             preencheCabecalhos();
+
             if(funcionario.Cargo == "Gerente")
             {
                 btn_relatório.Enabled = true;

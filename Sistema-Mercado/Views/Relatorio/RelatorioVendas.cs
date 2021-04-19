@@ -9,8 +9,8 @@ namespace Sistema_Mercado.Views.Relatorio
     {
         private Connection.Connection connection;
 
-        double totalVendido = 0;
-        int totalPedidos = 0;
+        private double totalVendido = 0;
+        private int totalPedidos = 0;
 
         public RelatorioVendas()
         {

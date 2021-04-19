@@ -7,6 +7,7 @@ namespace Sistema_Mercado.Views.Estoque
     public partial class DetalhesProduto : Form
     {
         private Produto produto;
+
         public DetalhesProduto(Produto produto)
         {
             InitializeComponent();

@@ -51,6 +51,8 @@ namespace Sistema_Mercado.Controllers
             connection = new Connection.Connection();
             con.ConnectionString = connection.getConnectionString();
 
+            con.Open();
+
             for (int index = 0; index < novoPedido.Produtos.Length; index++)
             {
                 if (novoPedido.Produtos[index] != null)
@@ -75,7 +77,9 @@ namespace Sistema_Mercado.Controllers
             connection = new Connection.Connection();
             con.ConnectionString = connection.getConnectionString();
 
-            for(int index = 0; index < novoPedido.Servicos.Length; index++)
+            con.Open();
+
+            for (int index = 0; index < novoPedido.Servicos.Length; index++)
             {
                 if(novoPedido.Servicos[index] != null)
                 {
