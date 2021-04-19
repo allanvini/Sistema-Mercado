@@ -42,6 +42,10 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_cadastraCliente = new System.Windows.Forms.Button();
             this.btn_atualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_clientes)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -172,6 +176,10 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel5);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btn_atualizar);
             this.panel1.Controls.Add(this.btn_cadastraCliente);
             this.panel1.Controls.Add(this.btn_excluirCliente);
@@ -180,6 +188,46 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(810, 117);
             this.panel1.TabIndex = 7;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(419, 31);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(29, 27);
+            this.panel3.TabIndex = 48;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Location = new System.Drawing.Point(240, 30);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(32, 28);
+            this.panel2.TabIndex = 49;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(41, 31);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(36, 27);
+            this.panel5.TabIndex = 48;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(633, 31);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(29, 27);
+            this.panel4.TabIndex = 49;
             // 
             // ClientesView
             // 
@@ -214,5 +262,9 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.Button btn_atualizar;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
     }
 }

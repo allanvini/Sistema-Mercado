@@ -39,6 +39,8 @@ namespace Sistema_Mercado.Views.Servicos
             this.txb_preco = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,7 +59,7 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_cancelar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_cancelar.ForeColor = System.Drawing.Color.White;
             this.btn_cancelar.Location = new System.Drawing.Point(13, 288);
             this.btn_cancelar.Name = "btn_cancelar";
@@ -69,7 +71,7 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             // btn_finalizaCadastro
             // 
-            this.btn_finalizaCadastro.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_finalizaCadastro.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_finalizaCadastro.ForeColor = System.Drawing.Color.White;
             this.btn_finalizaCadastro.Location = new System.Drawing.Point(13, 233);
             this.btn_finalizaCadastro.Name = "btn_finalizaCadastro";
@@ -141,6 +143,8 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_cancelar);
             this.panel2.Controls.Add(this.btn_finalizaCadastro);
             this.panel2.Controls.Add(this.groupBox2);
@@ -148,6 +152,26 @@ namespace Sistema_Mercado.Views.Servicos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(339, 353);
             this.panel2.TabIndex = 47;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(62, 297);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(58, 27);
+            this.panel3.TabIndex = 45;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.checklist_checked_box;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(62, 242);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(58, 27);
+            this.panel4.TabIndex = 46;
             // 
             // CadastraServico
             // 
@@ -179,5 +203,7 @@ namespace Sistema_Mercado.Views.Servicos
         private System.Windows.Forms.TextBox txb_preco;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -40,6 +40,8 @@ namespace Sistema_Mercado.Views.Servicos
             this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_servicos)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -155,6 +157,8 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_atualizar);
             this.panel2.Controls.Add(this.btn_cadastraServico);
             this.panel2.Controls.Add(this.btn_verDetalhes);
@@ -162,6 +166,26 @@ namespace Sistema_Mercado.Views.Servicos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(481, 85);
             this.panel2.TabIndex = 21;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(23, 27);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(36, 27);
+            this.panel3.TabIndex = 46;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(330, 27);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(29, 27);
+            this.panel4.TabIndex = 47;
             // 
             // ServicosView
             // 
@@ -193,5 +217,7 @@ namespace Sistema_Mercado.Views.Servicos
         private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

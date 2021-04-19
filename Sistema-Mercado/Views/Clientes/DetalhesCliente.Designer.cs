@@ -48,6 +48,7 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_enderecos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -187,6 +188,7 @@ namespace Sistema_Mercado.Views.Clientes
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txb_email);
@@ -222,6 +224,16 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1188, 64);
             this.panel1.TabIndex = 12;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(136, 19);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(36, 27);
+            this.panel5.TabIndex = 50;
             // 
             // DetalhesCliente
             // 
@@ -264,5 +276,6 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
     }
 }

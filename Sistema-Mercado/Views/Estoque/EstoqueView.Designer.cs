@@ -44,6 +44,9 @@ namespace Sistema_Mercado.Views.Estoque
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_produtoSelecionado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -163,6 +166,9 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btn_atualizar);
             this.panel1.Controls.Add(this.btn_cadastraProduto);
             this.panel1.Controls.Add(this.btn_verDetalhes);
@@ -188,6 +194,36 @@ namespace Sistema_Mercado.Views.Estoque
             this.label1.Size = new System.Drawing.Size(107, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Produto selecionado:";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(239, 36);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(36, 27);
+            this.panel3.TabIndex = 47;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Location = new System.Drawing.Point(483, 36);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(36, 27);
+            this.panel2.TabIndex = 48;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(780, 36);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(29, 27);
+            this.panel4.TabIndex = 48;
             // 
             // EstoqueView
             // 
@@ -224,5 +260,8 @@ namespace Sistema_Mercado.Views.Estoque
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_produtoSelecionado;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

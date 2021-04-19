@@ -35,11 +35,16 @@ namespace Sistema_Mercado.Views
             this.btn_verPedidos = new System.Windows.Forms.Button();
             this.btn_verEstoque = new System.Windows.Forms.Button();
             this.btn_verServicos = new System.Windows.Forms.Button();
-            this.btn_verClientes = new System.Windows.Forms.Button();
-            this.btn_sair = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_relatório = new System.Windows.Forms.Button();
+            this.btn_sair = new System.Windows.Forms.Button();
+            this.btn_verClientes = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -115,32 +120,6 @@ namespace Sistema_Mercado.Views
             this.btn_verServicos.UseVisualStyleBackColor = false;
             this.btn_verServicos.Click += new System.EventHandler(this.btn_verServicos_Click);
             // 
-            // btn_verClientes
-            // 
-            this.btn_verClientes.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btn_verClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_verClientes.ForeColor = System.Drawing.Color.White;
-            this.btn_verClientes.Location = new System.Drawing.Point(316, 78);
-            this.btn_verClientes.Name = "btn_verClientes";
-            this.btn_verClientes.Size = new System.Drawing.Size(305, 64);
-            this.btn_verClientes.TabIndex = 6;
-            this.btn_verClientes.Text = "Ver Clientes";
-            this.btn_verClientes.UseVisualStyleBackColor = false;
-            this.btn_verClientes.Click += new System.EventHandler(this.btn_verClientes_Click);
-            // 
-            // btn_sair
-            // 
-            this.btn_sair.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_sair.ForeColor = System.Drawing.Color.White;
-            this.btn_sair.Location = new System.Drawing.Point(5, 148);
-            this.btn_sair.Name = "btn_sair";
-            this.btn_sair.Size = new System.Drawing.Size(783, 64);
-            this.btn_sair.TabIndex = 7;
-            this.btn_sair.Text = "Sair";
-            this.btn_sair.UseVisualStyleBackColor = false;
-            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
@@ -157,6 +136,11 @@ namespace Sistema_Mercado.Views
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel7);
+            this.panel2.Controls.Add(this.panel6);
+            this.panel2.Controls.Add(this.panel5);
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_relatório);
             this.panel2.Controls.Add(this.btn_sair);
             this.panel2.Controls.Add(this.btn_verClientes);
@@ -181,6 +165,85 @@ namespace Sistema_Mercado.Views
             this.btn_relatório.Text = "Ver relatório de vendas";
             this.btn_relatório.UseVisualStyleBackColor = false;
             this.btn_relatório.Click += new System.EventHandler(this.btn_relatório_Click);
+            // 
+            // btn_sair
+            // 
+            this.btn_sair.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_sair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sair.ForeColor = System.Drawing.Color.White;
+            this.btn_sair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sair.Location = new System.Drawing.Point(5, 148);
+            this.btn_sair.Name = "btn_sair";
+            this.btn_sair.Size = new System.Drawing.Size(783, 64);
+            this.btn_sair.TabIndex = 7;
+            this.btn_sair.Text = "Sair";
+            this.btn_sair.UseVisualStyleBackColor = false;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
+            // 
+            // btn_verClientes
+            // 
+            this.btn_verClientes.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btn_verClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_verClientes.ForeColor = System.Drawing.Color.White;
+            this.btn_verClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_verClientes.Location = new System.Drawing.Point(316, 78);
+            this.btn_verClientes.Name = "btn_verClientes";
+            this.btn_verClientes.Size = new System.Drawing.Size(305, 64);
+            this.btn_verClientes.TabIndex = 6;
+            this.btn_verClientes.Text = "Ver Clientes";
+            this.btn_verClientes.UseVisualStyleBackColor = false;
+            this.btn_verClientes.Click += new System.EventHandler(this.btn_verClientes_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel7.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel7.Location = new System.Drawing.Point(316, 160);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(58, 42);
+            this.panel7.TabIndex = 10;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel6.BackgroundImage = global::Sistema_Mercado.Properties.Resources.estoque;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel6.Location = new System.Drawing.Point(26, 90);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(58, 42);
+            this.panel6.TabIndex = 10;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.sacola;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(26, 21);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(58, 42);
+            this.panel5.TabIndex = 10;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.capacete;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(351, 21);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(58, 42);
+            this.panel4.TabIndex = 10;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(351, 90);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(58, 42);
+            this.panel3.TabIndex = 9;
             // 
             // Dashboard
             // 
@@ -211,5 +274,10 @@ namespace Sistema_Mercado.Views
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_relatório;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
     }
 }

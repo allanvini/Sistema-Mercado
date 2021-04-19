@@ -41,6 +41,8 @@ namespace Sistema_Mercado.Views.Servicos
             this.txb_preco = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -164,6 +166,8 @@ namespace Sistema_Mercado.Views.Servicos
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_voltar);
             this.panel2.Controls.Add(this.btn_salvaAlteracoes);
             this.panel2.Controls.Add(this.groupBox2);
@@ -171,6 +175,26 @@ namespace Sistema_Mercado.Views.Servicos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(347, 392);
             this.panel2.TabIndex = 51;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.botao_de_retorno;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(61, 338);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(58, 27);
+            this.panel3.TabIndex = 49;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.download;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(61, 282);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(58, 27);
+            this.panel4.TabIndex = 46;
             // 
             // DetalhesServico
             // 
@@ -204,5 +228,7 @@ namespace Sistema_Mercado.Views.Servicos
         private System.Windows.Forms.Label lbl_produtoID;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
     }
 }

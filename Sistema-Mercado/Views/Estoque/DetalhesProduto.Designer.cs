@@ -56,6 +56,8 @@ namespace Sistema_Mercado.Views.Estoque
             this.btn_voltar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -281,7 +283,7 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             // btn_salvaAlteracoes
             // 
-            this.btn_salvaAlteracoes.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_salvaAlteracoes.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_salvaAlteracoes.ForeColor = System.Drawing.Color.White;
             this.btn_salvaAlteracoes.Location = new System.Drawing.Point(28, 360);
             this.btn_salvaAlteracoes.Name = "btn_salvaAlteracoes";
@@ -293,7 +295,7 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             // btn_voltar
             // 
-            this.btn_voltar.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btn_voltar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_voltar.ForeColor = System.Drawing.Color.White;
             this.btn_voltar.Location = new System.Drawing.Point(28, 415);
             this.btn_voltar.Name = "btn_voltar";
@@ -316,6 +318,8 @@ namespace Sistema_Mercado.Views.Estoque
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_salvaAlteracoes);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.btn_voltar);
@@ -324,6 +328,26 @@ namespace Sistema_Mercado.Views.Estoque
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(341, 478);
             this.panel2.TabIndex = 36;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.botao_de_retorno;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel3.Location = new System.Drawing.Point(77, 425);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(36, 29);
+            this.panel3.TabIndex = 51;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.download;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(73, 369);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(40, 27);
+            this.panel4.TabIndex = 52;
             // 
             // DetalhesProduto
             // 
@@ -374,5 +398,7 @@ namespace Sistema_Mercado.Views.Estoque
         private System.Windows.Forms.Button btn_voltar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

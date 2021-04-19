@@ -42,6 +42,8 @@ namespace Sistema_Mercado.Views.Pedidos
             this.lbl_valorTotal = new System.Windows.Forms.Label();
             this.btn_quitaPedido = new System.Windows.Forms.Button();
             this.btn_excluidPedido = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_pedido)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,11 +165,33 @@ namespace Sistema_Mercado.Views.Pedidos
             this.btn_excluidPedido.UseVisualStyleBackColor = false;
             this.btn_excluidPedido.Click += new System.EventHandler(this.btn_excluidPedido_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Location = new System.Drawing.Point(687, 475);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(36, 29);
+            this.panel1.TabIndex = 49;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.checklist_checked_box;
+            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel4.Location = new System.Drawing.Point(164, 475);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(44, 27);
+            this.panel4.TabIndex = 50;
+            // 
             // DetalhesPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 537);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_excluidPedido);
             this.Controls.Add(this.btn_quitaPedido);
             this.Controls.Add(this.lbl_valorTotal);
@@ -196,5 +220,7 @@ namespace Sistema_Mercado.Views.Pedidos
         private System.Windows.Forms.DataGridViewTextBoxColumn Cliente;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Forma_Pagamento;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel4;
     }
 }
