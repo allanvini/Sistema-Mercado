@@ -55,8 +55,6 @@ namespace Sistema_Mercado.Views.Estoque
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -67,11 +65,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_cancelar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_cancelar.ForeColor = System.Drawing.Color.White;
+            this.btn_cancelar.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_cancelar.Location = new System.Drawing.Point(10, 342);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(310, 49);
             this.btn_cancelar.TabIndex = 39;
             this.btn_cancelar.Text = "Cancelar";
+            this.btn_cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
@@ -79,11 +80,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_finalizaCadastro.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_finalizaCadastro.ForeColor = System.Drawing.Color.White;
+            this.btn_finalizaCadastro.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_finalizaCadastro.Location = new System.Drawing.Point(10, 287);
             this.btn_finalizaCadastro.Name = "btn_finalizaCadastro";
             this.btn_finalizaCadastro.Size = new System.Drawing.Size(310, 49);
             this.btn_finalizaCadastro.TabIndex = 38;
             this.btn_finalizaCadastro.Text = "Cadastrar produto";
+            this.btn_finalizaCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_finalizaCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_finalizaCadastro.UseVisualStyleBackColor = false;
             this.btn_finalizaCadastro.Click += new System.EventHandler(this.btn_finalizaCadastro_Click);
             // 
@@ -306,36 +310,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_finalizaCadastro);
             this.panel2.Controls.Add(this.groupBox2);
             this.panel2.Controls.Add(this.btn_cancelar);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Location = new System.Drawing.Point(0, 65);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(338, 413);
+            this.panel2.Size = new System.Drawing.Size(338, 399);
             this.panel2.TabIndex = 42;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(80, 298);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 27);
-            this.panel3.TabIndex = 49;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(80, 355);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(36, 29);
-            this.panel4.TabIndex = 51;
             // 
             // CadastraProduto
             // 
@@ -387,7 +369,5 @@ namespace Sistema_Mercado.Views.Estoque
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
     }
 }

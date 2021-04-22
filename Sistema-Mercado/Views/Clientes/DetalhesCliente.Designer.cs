@@ -46,9 +46,9 @@ namespace Sistema_Mercado.Views.Clientes
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CEP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_enderecos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -136,6 +136,7 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             // dtgv_enderecos
             // 
+            this.dtgv_enderecos.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_enderecos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_enderecos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -205,6 +206,16 @@ namespace Sistema_Mercado.Views.Clientes
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados cadastrais";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
+            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel5.Location = new System.Drawing.Point(136, 19);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(36, 27);
+            this.panel5.TabIndex = 50;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtgv_enderecos);
@@ -224,16 +235,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1188, 64);
             this.panel1.TabIndex = 12;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(136, 19);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(36, 27);
-            this.panel5.TabIndex = 50;
             // 
             // DetalhesCliente
             // 

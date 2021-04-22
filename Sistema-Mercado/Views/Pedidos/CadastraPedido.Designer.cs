@@ -29,6 +29,9 @@ namespace Sistema_Mercado.Views.Pedidos
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txb_quantidadeProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,11 +75,6 @@ namespace Sistema_Mercado.Views.Pedidos
             this.rdb_credito = new System.Windows.Forms.RadioButton();
             this.rdb_dinheiro = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -89,7 +87,6 @@ namespace Sistema_Mercado.Views.Pedidos
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox1.Controls.Add(this.panel4);
             this.groupBox1.Controls.Add(this.txb_quantidadeProduto);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -156,11 +153,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_adicionaProduto.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_adicionaProduto.ForeColor = System.Drawing.Color.White;
+            this.btn_adicionaProduto.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_adicionaProduto.Location = new System.Drawing.Point(1081, 127);
             this.btn_adicionaProduto.Name = "btn_adicionaProduto";
             this.btn_adicionaProduto.Size = new System.Drawing.Size(179, 50);
             this.btn_adicionaProduto.TabIndex = 6;
             this.btn_adicionaProduto.Text = "Adicionar Produto";
+            this.btn_adicionaProduto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_adicionaProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_adicionaProduto.UseVisualStyleBackColor = false;
             this.btn_adicionaProduto.Click += new System.EventHandler(this.btn_adicionaProduto_Click);
             // 
@@ -169,6 +169,7 @@ namespace Sistema_Mercado.Views.Pedidos
             this.dtgv_produtos.AllowUserToAddRows = false;
             this.dtgv_produtos.AllowUserToDeleteRows = false;
             this.dtgv_produtos.AllowUserToOrderColumns = true;
+            this.dtgv_produtos.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -179,6 +180,14 @@ namespace Sistema_Mercado.Views.Pedidos
             this.Preco_Venda,
             this.Estoque,
             this.Data_Vencimento});
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_produtos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dtgv_produtos.Location = new System.Drawing.Point(6, 19);
             this.dtgv_produtos.Name = "dtgv_produtos";
             this.dtgv_produtos.ReadOnly = true;
@@ -242,7 +251,6 @@ namespace Sistema_Mercado.Views.Pedidos
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox2.Controls.Add(this.panel3);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.lbl_servicoID);
             this.groupBox2.Controls.Add(this.label9);
@@ -289,11 +297,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // btn_adicionaServico
             // 
             this.btn_adicionaServico.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_adicionaServico.Image = global::Sistema_Mercado.Properties.Resources.plus;
+            this.btn_adicionaServico.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_adicionaServico.Location = new System.Drawing.Point(455, 129);
             this.btn_adicionaServico.Name = "btn_adicionaServico";
             this.btn_adicionaServico.Size = new System.Drawing.Size(235, 50);
             this.btn_adicionaServico.TabIndex = 16;
             this.btn_adicionaServico.Text = "Adicionar Serviço";
+            this.btn_adicionaServico.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_adicionaServico.UseVisualStyleBackColor = false;
             this.btn_adicionaServico.Click += new System.EventHandler(this.btn_adicionaServico_Click);
             // 
@@ -302,11 +313,20 @@ namespace Sistema_Mercado.Views.Pedidos
             this.dtgv_servicos.AllowUserToAddRows = false;
             this.dtgv_servicos.AllowUserToDeleteRows = false;
             this.dtgv_servicos.AllowUserToOrderColumns = true;
+            this.dtgv_servicos.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_servicos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_servicos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.Descricao,
             this.Preco});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_servicos.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtgv_servicos.Location = new System.Drawing.Point(6, 19);
             this.dtgv_servicos.Name = "dtgv_servicos";
             this.dtgv_servicos.ReadOnly = true;
@@ -348,7 +368,6 @@ namespace Sistema_Mercado.Views.Pedidos
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBox3.Controls.Add(this.panel5);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.lbl_clienteID);
             this.groupBox3.Controls.Add(this.label2);
@@ -395,11 +414,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // btn_selecionaCliente
             // 
             this.btn_selecionaCliente.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btn_selecionaCliente.Image = global::Sistema_Mercado.Properties.Resources.customer__2_;
+            this.btn_selecionaCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_selecionaCliente.Location = new System.Drawing.Point(787, 119);
             this.btn_selecionaCliente.Name = "btn_selecionaCliente";
             this.btn_selecionaCliente.Size = new System.Drawing.Size(222, 50);
             this.btn_selecionaCliente.TabIndex = 5;
             this.btn_selecionaCliente.Text = "Seleciona Cliente";
+            this.btn_selecionaCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_selecionaCliente.UseVisualStyleBackColor = false;
             this.btn_selecionaCliente.Click += new System.EventHandler(this.btn_selecionaCliente_Click);
             // 
@@ -408,6 +430,7 @@ namespace Sistema_Mercado.Views.Pedidos
             this.dtgv_clientes.AllowUserToAddRows = false;
             this.dtgv_clientes.AllowUserToDeleteRows = false;
             this.dtgv_clientes.AllowUserToOrderColumns = true;
+            this.dtgv_clientes.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -415,6 +438,14 @@ namespace Sistema_Mercado.Views.Pedidos
             this.CPF,
             this.Data_de_Nascimento,
             this.Email});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgv_clientes.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtgv_clientes.Location = new System.Drawing.Point(6, 19);
             this.dtgv_clientes.Name = "dtgv_clientes";
             this.dtgv_clientes.ReadOnly = true;
@@ -461,11 +492,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_fechaPedido.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_fechaPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_fechaPedido.Image = global::Sistema_Mercado.Properties.Resources.carrinho;
             this.btn_fechaPedido.Location = new System.Drawing.Point(1017, 489);
             this.btn_fechaPedido.Name = "btn_fechaPedido";
             this.btn_fechaPedido.Size = new System.Drawing.Size(215, 50);
             this.btn_fechaPedido.TabIndex = 4;
             this.btn_fechaPedido.Text = "Finaliza Pedido";
+            this.btn_fechaPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_fechaPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_fechaPedido.UseVisualStyleBackColor = false;
             this.btn_fechaPedido.Click += new System.EventHandler(this.btn_fechaPedido_Click);
             // 
@@ -473,11 +507,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_cancela.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_cancela.ForeColor = System.Drawing.Color.White;
+            this.btn_cancela.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_cancela.Location = new System.Drawing.Point(1017, 545);
             this.btn_cancela.Name = "btn_cancela";
             this.btn_cancela.Size = new System.Drawing.Size(215, 50);
             this.btn_cancela.TabIndex = 5;
             this.btn_cancela.Text = "Cancela";
+            this.btn_cancela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cancela.UseVisualStyleBackColor = false;
             this.btn_cancela.Click += new System.EventHandler(this.btn_cancela_Click);
             // 
@@ -529,63 +566,11 @@ namespace Sistema_Mercado.Views.Pedidos
             this.label8.TabIndex = 10;
             this.label8.Text = "Selecione uma forma de pagamento";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.carrinho;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(1051, 493);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(36, 40);
-            this.panel2.TabIndex = 49;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(1051, 549);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(36, 40);
-            this.panel1.TabIndex = 48;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(483, 142);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 27);
-            this.panel3.TabIndex = 47;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(1098, 139);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 27);
-            this.panel4.TabIndex = 50;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(815, 131);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(36, 27);
-            this.panel5.TabIndex = 49;
-            // 
             // CadastraPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1301, 653);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btn_cancela);
             this.Controls.Add(this.groupBox2);
@@ -656,10 +641,5 @@ namespace Sistema_Mercado.Views.Pedidos
         private System.Windows.Forms.RadioButton rdb_credito;
         private System.Windows.Forms.RadioButton rdb_dinheiro;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
     }
 }

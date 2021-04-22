@@ -41,10 +41,6 @@ namespace Sistema_Mercado.Views.Pedidos
             this.btn_atualizar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_pedidoID = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_pedidos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,6 +49,7 @@ namespace Sistema_Mercado.Views.Pedidos
             this.dtgv_pedidos.AllowUserToAddRows = false;
             this.dtgv_pedidos.AllowUserToDeleteRows = false;
             this.dtgv_pedidos.AllowUserToOrderColumns = true;
+            this.dtgv_pedidos.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_pedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Pedido,
@@ -105,11 +102,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_detalhesPedido.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_detalhesPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_detalhesPedido.Image = global::Sistema_Mercado.Properties.Resources.menu;
             this.btn_detalhesPedido.Location = new System.Drawing.Point(13, 498);
             this.btn_detalhesPedido.Name = "btn_detalhesPedido";
             this.btn_detalhesPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_detalhesPedido.TabIndex = 1;
             this.btn_detalhesPedido.Text = "Ver de talhes do pedido";
+            this.btn_detalhesPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_detalhesPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_detalhesPedido.UseVisualStyleBackColor = false;
             this.btn_detalhesPedido.Click += new System.EventHandler(this.btn_detalhesPedido_Click);
             // 
@@ -117,11 +117,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_excluirPedido.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_excluirPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_excluirPedido.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_excluirPedido.Location = new System.Drawing.Point(251, 498);
             this.btn_excluirPedido.Name = "btn_excluirPedido";
             this.btn_excluirPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_excluirPedido.TabIndex = 2;
             this.btn_excluirPedido.Text = "Excluir pedido";
+            this.btn_excluirPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_excluirPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_excluirPedido.UseVisualStyleBackColor = false;
             this.btn_excluirPedido.Click += new System.EventHandler(this.btn_excluirPedido_Click);
             // 
@@ -129,11 +132,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_adicionarPedido.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_adicionarPedido.ForeColor = System.Drawing.Color.White;
+            this.btn_adicionarPedido.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_adicionarPedido.Location = new System.Drawing.Point(488, 498);
             this.btn_adicionarPedido.Name = "btn_adicionarPedido";
             this.btn_adicionarPedido.Size = new System.Drawing.Size(232, 62);
             this.btn_adicionarPedido.TabIndex = 3;
             this.btn_adicionarPedido.Text = "Cadastrar novo pedido";
+            this.btn_adicionarPedido.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_adicionarPedido.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_adicionarPedido.UseVisualStyleBackColor = false;
             this.btn_adicionarPedido.Click += new System.EventHandler(this.btn_adicionarPedido_Click);
             // 
@@ -141,11 +147,14 @@ namespace Sistema_Mercado.Views.Pedidos
             // 
             this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_atualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_atualizar.Image = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
             this.btn_atualizar.Location = new System.Drawing.Point(726, 498);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(232, 62);
             this.btn_atualizar.TabIndex = 4;
             this.btn_atualizar.Text = "Atualizar lista";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
@@ -168,55 +177,11 @@ namespace Sistema_Mercado.Views.Pedidos
             this.lbl_pedidoID.TabIndex = 6;
             this.lbl_pedidoID.Text = "_";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(778, 514);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 27);
-            this.panel4.TabIndex = 48;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(293, 514);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(36, 29);
-            this.panel1.TabIndex = 50;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(513, 514);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 27);
-            this.panel3.TabIndex = 48;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(34, 516);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(36, 27);
-            this.panel2.TabIndex = 51;
-            // 
             // PedidosView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 588);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.lbl_pedidoID);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_atualizar);
@@ -246,9 +211,5 @@ namespace Sistema_Mercado.Views.Pedidos
         private System.Windows.Forms.Button btn_atualizar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_pedidoID;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
     }
 }

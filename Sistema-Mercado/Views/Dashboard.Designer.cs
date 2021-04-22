@@ -40,11 +40,6 @@ namespace Sistema_Mercado.Views
             this.btn_relatório = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
             this.btn_verClientes = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -86,11 +81,14 @@ namespace Sistema_Mercado.Views
             this.btn_verPedidos.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_verPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verPedidos.ForeColor = System.Drawing.Color.White;
+            this.btn_verPedidos.Image = global::Sistema_Mercado.Properties.Resources.sacola;
             this.btn_verPedidos.Location = new System.Drawing.Point(5, 8);
             this.btn_verPedidos.Name = "btn_verPedidos";
             this.btn_verPedidos.Size = new System.Drawing.Size(305, 64);
             this.btn_verPedidos.TabIndex = 3;
             this.btn_verPedidos.Text = "Ver Pedidos";
+            this.btn_verPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verPedidos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_verPedidos.UseVisualStyleBackColor = false;
             this.btn_verPedidos.Click += new System.EventHandler(this.btn_verPedidos_Click);
             // 
@@ -99,11 +97,14 @@ namespace Sistema_Mercado.Views
             this.btn_verEstoque.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_verEstoque.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verEstoque.ForeColor = System.Drawing.Color.White;
+            this.btn_verEstoque.Image = global::Sistema_Mercado.Properties.Resources.estoque;
             this.btn_verEstoque.Location = new System.Drawing.Point(5, 78);
             this.btn_verEstoque.Name = "btn_verEstoque";
             this.btn_verEstoque.Size = new System.Drawing.Size(305, 64);
             this.btn_verEstoque.TabIndex = 4;
             this.btn_verEstoque.Text = "Ver Estoque";
+            this.btn_verEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verEstoque.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_verEstoque.UseVisualStyleBackColor = false;
             this.btn_verEstoque.Click += new System.EventHandler(this.btn_verEstoque_Click);
             // 
@@ -112,11 +113,14 @@ namespace Sistema_Mercado.Views
             this.btn_verServicos.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_verServicos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verServicos.ForeColor = System.Drawing.Color.White;
+            this.btn_verServicos.Image = global::Sistema_Mercado.Properties.Resources.capacete;
             this.btn_verServicos.Location = new System.Drawing.Point(316, 8);
             this.btn_verServicos.Name = "btn_verServicos";
             this.btn_verServicos.Size = new System.Drawing.Size(305, 64);
             this.btn_verServicos.TabIndex = 5;
             this.btn_verServicos.Text = "Ver Serviços";
+            this.btn_verServicos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verServicos.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_verServicos.UseVisualStyleBackColor = false;
             this.btn_verServicos.Click += new System.EventHandler(this.btn_verServicos_Click);
             // 
@@ -136,11 +140,6 @@ namespace Sistema_Mercado.Views
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel7);
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_relatório);
             this.panel2.Controls.Add(this.btn_sair);
             this.panel2.Controls.Add(this.btn_verClientes);
@@ -172,12 +171,15 @@ namespace Sistema_Mercado.Views
             this.btn_sair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_sair.ForeColor = System.Drawing.Color.White;
-            this.btn_sair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_sair.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_sair.Location = new System.Drawing.Point(5, 148);
             this.btn_sair.Name = "btn_sair";
+            this.btn_sair.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_sair.Size = new System.Drawing.Size(783, 64);
             this.btn_sair.TabIndex = 7;
             this.btn_sair.Text = "Sair";
+            this.btn_sair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_sair.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_sair.UseVisualStyleBackColor = false;
             this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
             // 
@@ -186,64 +188,16 @@ namespace Sistema_Mercado.Views
             this.btn_verClientes.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_verClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_verClientes.ForeColor = System.Drawing.Color.White;
-            this.btn_verClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_verClientes.Image = global::Sistema_Mercado.Properties.Resources.customer__2_;
             this.btn_verClientes.Location = new System.Drawing.Point(316, 78);
             this.btn_verClientes.Name = "btn_verClientes";
             this.btn_verClientes.Size = new System.Drawing.Size(305, 64);
             this.btn_verClientes.TabIndex = 6;
             this.btn_verClientes.Text = "Ver Clientes";
+            this.btn_verClientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_verClientes.UseVisualStyleBackColor = false;
             this.btn_verClientes.Click += new System.EventHandler(this.btn_verClientes_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel7.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel7.Location = new System.Drawing.Point(316, 160);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(58, 42);
-            this.panel7.TabIndex = 10;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel6.BackgroundImage = global::Sistema_Mercado.Properties.Resources.estoque;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel6.Location = new System.Drawing.Point(26, 90);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(58, 42);
-            this.panel6.TabIndex = 10;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.sacola;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(26, 21);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(58, 42);
-            this.panel5.TabIndex = 10;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.capacete;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(351, 21);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(58, 42);
-            this.panel4.TabIndex = 10;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.customer__2_;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(351, 90);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(58, 42);
-            this.panel3.TabIndex = 9;
             // 
             // Dashboard
             // 
@@ -253,6 +207,7 @@ namespace Sistema_Mercado.Views
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -274,10 +229,5 @@ namespace Sistema_Mercado.Views
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_relatório;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
     }
 }

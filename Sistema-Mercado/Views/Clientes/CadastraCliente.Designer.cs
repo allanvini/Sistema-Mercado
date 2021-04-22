@@ -60,8 +60,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_cancela = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -342,11 +340,14 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_addEndereco.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_addEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_addEndereco.ForeColor = System.Drawing.Color.White;
+            this.btn_addEndereco.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_addEndereco.Location = new System.Drawing.Point(254, 43);
             this.btn_addEndereco.Name = "btn_addEndereco";
             this.btn_addEndereco.Size = new System.Drawing.Size(90, 134);
             this.btn_addEndereco.TabIndex = 0;
             this.btn_addEndereco.Text = "Adicionar";
+            this.btn_addEndereco.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btn_addEndereco.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btn_addEndereco.UseVisualStyleBackColor = false;
             this.btn_addEndereco.Click += new System.EventHandler(this.btn_addEndereco_Click);
             // 
@@ -355,11 +356,14 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_finalizaCadastro.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_finalizaCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_finalizaCadastro.ForeColor = System.Drawing.Color.White;
+            this.btn_finalizaCadastro.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_finalizaCadastro.Location = new System.Drawing.Point(12, 219);
             this.btn_finalizaCadastro.Name = "btn_finalizaCadastro";
             this.btn_finalizaCadastro.Size = new System.Drawing.Size(304, 63);
             this.btn_finalizaCadastro.TabIndex = 14;
             this.btn_finalizaCadastro.Text = "Cadastrar";
+            this.btn_finalizaCadastro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_finalizaCadastro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_finalizaCadastro.UseVisualStyleBackColor = false;
             this.btn_finalizaCadastro.Click += new System.EventHandler(this.btn_finalizaCadastro_Click);
             // 
@@ -368,11 +372,14 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_cancela.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btn_cancela.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancela.ForeColor = System.Drawing.Color.White;
+            this.btn_cancela.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_cancela.Location = new System.Drawing.Point(328, 219);
             this.btn_cancela.Name = "btn_cancela";
             this.btn_cancela.Size = new System.Drawing.Size(304, 63);
             this.btn_cancela.TabIndex = 15;
             this.btn_cancela.Text = "Cancelar";
+            this.btn_cancela.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cancela.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cancela.UseVisualStyleBackColor = false;
             this.btn_cancela.Click += new System.EventHandler(this.btn_cancela_Click);
             // 
@@ -390,8 +397,6 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.btn_cancela);
             this.panel2.Controls.Add(this.btn_finalizaCadastro);
             this.panel2.Controls.Add(this.groupBox3);
@@ -401,26 +406,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(657, 305);
             this.panel2.TabIndex = 17;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(74, 237);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 27);
-            this.panel3.TabIndex = 48;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(399, 232);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(36, 32);
-            this.panel4.TabIndex = 49;
             // 
             // CadastraCliente
             // 
@@ -477,7 +462,5 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.Button btn_cancela;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
     }
 }

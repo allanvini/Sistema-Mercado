@@ -44,9 +44,6 @@ namespace Sistema_Mercado.Views.Estoque
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_produtoSelecionado = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_produtos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,11 +52,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_atualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_atualizar.Image = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
             this.btn_atualizar.Location = new System.Drawing.Point(719, 25);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(261, 48);
             this.btn_atualizar.TabIndex = 13;
             this.btn_atualizar.Text = "Atualizar lista";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
@@ -67,11 +67,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_cadastraProduto.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_cadastraProduto.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastraProduto.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_cadastraProduto.Location = new System.Drawing.Point(452, 25);
             this.btn_cadastraProduto.Name = "btn_cadastraProduto";
             this.btn_cadastraProduto.Size = new System.Drawing.Size(261, 48);
             this.btn_cadastraProduto.TabIndex = 12;
             this.btn_cadastraProduto.Text = "Cadastrar novo produto";
+            this.btn_cadastraProduto.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cadastraProduto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cadastraProduto.UseVisualStyleBackColor = false;
             this.btn_cadastraProduto.Click += new System.EventHandler(this.btn_cadastraProduto_Click);
             // 
@@ -79,11 +82,14 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.btn_verDetalhes.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_verDetalhes.ForeColor = System.Drawing.Color.White;
+            this.btn_verDetalhes.Image = global::Sistema_Mercado.Properties.Resources.menu;
             this.btn_verDetalhes.Location = new System.Drawing.Point(180, 25);
             this.btn_verDetalhes.Name = "btn_verDetalhes";
             this.btn_verDetalhes.Size = new System.Drawing.Size(266, 48);
             this.btn_verDetalhes.TabIndex = 8;
             this.btn_verDetalhes.Text = "Ver detalhes";
+            this.btn_verDetalhes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verDetalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_verDetalhes.UseVisualStyleBackColor = false;
             this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
             // 
@@ -92,6 +98,7 @@ namespace Sistema_Mercado.Views.Estoque
             this.dtgv_produtos.AllowUserToAddRows = false;
             this.dtgv_produtos.AllowUserToDeleteRows = false;
             this.dtgv_produtos.AllowUserToOrderColumns = true;
+            this.dtgv_produtos.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -166,9 +173,6 @@ namespace Sistema_Mercado.Views.Estoque
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btn_atualizar);
             this.panel1.Controls.Add(this.btn_cadastraProduto);
             this.panel1.Controls.Add(this.btn_verDetalhes);
@@ -194,36 +198,6 @@ namespace Sistema_Mercado.Views.Estoque
             this.label1.Size = new System.Drawing.Size(107, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Produto selecionado:";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(239, 36);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(36, 27);
-            this.panel3.TabIndex = 47;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(483, 36);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(36, 27);
-            this.panel2.TabIndex = 48;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(780, 36);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 27);
-            this.panel4.TabIndex = 48;
             // 
             // EstoqueView
             // 
@@ -260,8 +234,5 @@ namespace Sistema_Mercado.Views.Estoque
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_produtoSelecionado;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
     }
 }

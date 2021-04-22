@@ -42,10 +42,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.btn_cadastraCliente = new System.Windows.Forms.Button();
             this.btn_atualizar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_clientes)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +51,7 @@ namespace Sistema_Mercado.Views.Clientes
             this.dtgv_clientes.AllowUserToAddRows = false;
             this.dtgv_clientes.AllowUserToDeleteRows = false;
             this.dtgv_clientes.AllowUserToOrderColumns = true;
+            this.dtgv_clientes.BackgroundColor = System.Drawing.Color.White;
             this.dtgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgv_clientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -108,11 +105,14 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.btn_verDetalhes.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_verDetalhes.ForeColor = System.Drawing.Color.White;
+            this.btn_verDetalhes.Image = global::Sistema_Mercado.Properties.Resources.menu;
             this.btn_verDetalhes.Location = new System.Drawing.Point(13, 19);
             this.btn_verDetalhes.Name = "btn_verDetalhes";
             this.btn_verDetalhes.Size = new System.Drawing.Size(191, 48);
             this.btn_verDetalhes.TabIndex = 1;
             this.btn_verDetalhes.Text = "Ver detalhes";
+            this.btn_verDetalhes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_verDetalhes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_verDetalhes.UseVisualStyleBackColor = false;
             this.btn_verDetalhes.Click += new System.EventHandler(this.btn_verDetalhes_Click);
             // 
@@ -140,11 +140,14 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.btn_excluirCliente.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_excluirCliente.ForeColor = System.Drawing.Color.White;
+            this.btn_excluirCliente.Image = global::Sistema_Mercado.Properties.Resources.cancel__2_;
             this.btn_excluirCliente.Location = new System.Drawing.Point(213, 19);
             this.btn_excluirCliente.Name = "btn_excluirCliente";
             this.btn_excluirCliente.Size = new System.Drawing.Size(191, 48);
             this.btn_excluirCliente.TabIndex = 4;
             this.btn_excluirCliente.Text = "Excluir cliente";
+            this.btn_excluirCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_excluirCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_excluirCliente.UseVisualStyleBackColor = false;
             this.btn_excluirCliente.Click += new System.EventHandler(this.btn_excluirCliente_Click);
             // 
@@ -152,11 +155,14 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.btn_cadastraCliente.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_cadastraCliente.ForeColor = System.Drawing.Color.White;
+            this.btn_cadastraCliente.Image = global::Sistema_Mercado.Properties.Resources.plus;
             this.btn_cadastraCliente.Location = new System.Drawing.Point(410, 19);
             this.btn_cadastraCliente.Name = "btn_cadastraCliente";
             this.btn_cadastraCliente.Size = new System.Drawing.Size(186, 48);
             this.btn_cadastraCliente.TabIndex = 5;
             this.btn_cadastraCliente.Text = "Cadastrar novo cliente";
+            this.btn_cadastraCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_cadastraCliente.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_cadastraCliente.UseVisualStyleBackColor = false;
             this.btn_cadastraCliente.Click += new System.EventHandler(this.btn_cadastraCliente_Click);
             // 
@@ -164,11 +170,14 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.btn_atualizar.BackColor = System.Drawing.Color.RoyalBlue;
             this.btn_atualizar.ForeColor = System.Drawing.Color.White;
+            this.btn_atualizar.Image = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
             this.btn_atualizar.Location = new System.Drawing.Point(602, 19);
             this.btn_atualizar.Name = "btn_atualizar";
             this.btn_atualizar.Size = new System.Drawing.Size(186, 48);
             this.btn_atualizar.TabIndex = 6;
             this.btn_atualizar.Text = "Atualizar lista";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
@@ -176,10 +185,6 @@ namespace Sistema_Mercado.Views.Clientes
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btn_atualizar);
             this.panel1.Controls.Add(this.btn_cadastraCliente);
             this.panel1.Controls.Add(this.btn_excluirCliente);
@@ -188,46 +193,6 @@ namespace Sistema_Mercado.Views.Clientes
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(810, 117);
             this.panel1.TabIndex = 7;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.BackgroundImage = global::Sistema_Mercado.Properties.Resources.plus;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel3.Location = new System.Drawing.Point(419, 31);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(29, 27);
-            this.panel3.TabIndex = 48;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BackgroundImage = global::Sistema_Mercado.Properties.Resources.cancel__2_;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel2.Location = new System.Drawing.Point(240, 30);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(32, 28);
-            this.panel2.TabIndex = 49;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel5.BackgroundImage = global::Sistema_Mercado.Properties.Resources.menu;
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel5.Location = new System.Drawing.Point(41, 31);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(36, 27);
-            this.panel5.TabIndex = 48;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.BackgroundImage = global::Sistema_Mercado.Properties.Resources.seta_para_atualizar__1_;
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel4.Location = new System.Drawing.Point(633, 31);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(29, 27);
-            this.panel4.TabIndex = 49;
             // 
             // ClientesView
             // 
@@ -262,9 +227,5 @@ namespace Sistema_Mercado.Views.Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.Button btn_atualizar;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -108,6 +108,8 @@ namespace Sistema_Mercado.Views.Relatorio
             this.btn_atualizar.Size = new System.Drawing.Size(153, 42);
             this.btn_atualizar.TabIndex = 5;
             this.btn_atualizar.Text = "Atualizar";
+            this.btn_atualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_atualizar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_atualizar.UseVisualStyleBackColor = false;
             this.btn_atualizar.Click += new System.EventHandler(this.btn_atualizar_Click);
             // 
@@ -122,6 +124,8 @@ namespace Sistema_Mercado.Views.Relatorio
             this.btn_voltar.Size = new System.Drawing.Size(144, 42);
             this.btn_voltar.TabIndex = 4;
             this.btn_voltar.Text = "Voltar";
+            this.btn_voltar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_voltar.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_voltar.UseVisualStyleBackColor = false;
             this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 

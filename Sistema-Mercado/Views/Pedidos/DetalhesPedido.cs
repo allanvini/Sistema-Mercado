@@ -64,10 +64,55 @@ namespace Sistema_Mercado.Views.Pedidos
                                 dataTable.Rows[index][7]
                             );
 
-                            this.valorTotal += Convert.ToInt32(dataTable.Rows[index][2]) * Convert.ToDouble(dataTable.Rows[index][3]);
+                            this.valorTotal += Convert.ToDouble(dataTable.Rows[index][2]) * Convert.ToDouble(dataTable.Rows[index][3]);
                         }
                     }
                     catch(Exception ex)
+                    {
+                        MessageBox.Show("Erro: " + ex);
+                    }
+                }
+            }
+
+            dtgv_servicos.DataSource = null;
+            dtgv_servicos.Rows.Clear();
+            dtgv_servicos.Refresh();
+
+            query = "CALL consulta_pedido_servicos(?PedidoID);";
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(query, con))
+                {
+                    MySqlCommand command = new MySqlCommand(query, con);
+                    command.Parameters.Add("?PedidoID", (MySqlDbType)SqlDbType.Int);
+                    command.Parameters["?PedidoID"].Value = this.PedidoID;
+
+                    adapter.SelectCommand = command;
+                    adapter.InsertCommand = command;
+
+                    try
+                    {
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+
+                        for (int index = 0; index < dataTable.Rows.Count; index++)
+                        {
+                            dtgv_servicos.Rows.Add
+                            (
+                                dataTable.Rows[index][0],
+                                dataTable.Rows[index][1],
+                                dataTable.Rows[index][2],
+                                dataTable.Rows[index][3],
+                                dataTable.Rows[index][4],
+                                dataTable.Rows[index][5],
+                                dataTable.Rows[index][6]
+                            );
+
+                            this.valorTotal += Convert.ToDouble(dataTable.Rows[index][2]);
+                        }
+                    }
+                    catch (Exception ex)
                     {
                         MessageBox.Show("Erro: " + ex);
                     }
